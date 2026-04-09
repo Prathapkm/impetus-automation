@@ -1,0 +1,25 @@
+{
+  "name": "impetusz-automation",
+  "version": "1.0.0",
+  "description": "BDD Test Automation Framework for Impetusz Platform",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:all": "ts-node src/runner/run-all.ts",
+    "test:smoke": "ts-node src/runner/run-smoke.ts",
+    "test:regression": "ts-node src/runner/run-regression.ts",
+    "test:tag": "cucumber-js --tags",
+    "test:report": "cucumber-js && node reports/generate-report.js",
+    "install:browsers": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.41.0",
+    "playwright": "^1.41.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.3.1",
+    "@types/node": "^20.11.5",
+    "multiple-cucumber-html-reporter": "^3.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

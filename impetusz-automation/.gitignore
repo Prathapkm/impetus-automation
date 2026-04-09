@@ -1,0 +1,7 @@
+node_modules/
+dist/
+reports/cucumber-report.json
+reports/cucumber-report.html
+reports/html-report/
+reports/screenshots/
+*.log
